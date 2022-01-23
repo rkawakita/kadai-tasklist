@@ -18,7 +18,7 @@ import javax.persistence.Table;
             query= "SELECT t FROM Task AS t ORDER BY t.id DESC"
             ),
     @NamedQuery(
-            name = "getTaskCount",
+            name = "getTasksCount",
             query = "SELECT COUNT(t) FROM Task AS t"
             )
 })
