@@ -54,6 +54,7 @@ public class IndexServlet extends HttpServlet {
         request.setAttribute("tasks", tasks);
         request.setAttribute("tasks_count",tasks_count);
         request.setAttribute("page", page);
+        request.setAttribute("last_page", (tasks_count -1) /10 +1);
 
         if (request.getSession().getAttribute("flush") != null ) {
             request.setAttribute("flush", request.getSession().getAttribute("flush"));
